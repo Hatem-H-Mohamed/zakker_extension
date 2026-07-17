@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Zakker - ذكّر</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <div class="bg-blob bg-blob-gold"></div>
+  <div class="bg-blob bg-blob-teal"></div>
+
+  <div class="container">
+    <header class="glass">
+      <div class="brand-group">
+        <img src="icons/logo.png" alt="Zakker" class="logo" />
+        <div class="title-group">
+          <h1>Zakker</h1>
+          <span class="arabic">ذكّر</span>
+        </div>
+      </div>
+      <button id="langToggle" class="lang-btn">العربية</button>
+    </header>
+
+    <main class="glass">
+      <section class="row">
+        <label class="switch">
+          <input type="checkbox" id="enabled" />
+          <span class="slider"></span>
+        </label>
+        <label for="enabled" data-i18n="enableReminders">Enable reminders</label>
+      </section>
+
+      <div class="divider"></div>
+
+      <section class="row">
+        <label for="interval" data-i18n="remindMeEvery">Remind me every</label>
+        
+        <!-- Custom Dropdown Component -->
+        <div class="custom-select" id="intervalContainer">
+          <div class="select-trigger" id="intervalTrigger" tabindex="0">
+            <span id="intervalTriggerText" data-i18n="interval60m">1 hour</span>
+            <span class="select-trigger-arrow"></span>
+          </div>
+          <div class="select-options glass" id="intervalOptions">
+            <div class="option" data-value="10" data-i18n="interval10m">10 minutes</div>
+            <div class="option" data-value="30" data-i18n="interval30m">30 minutes</div>
+            <div class="option" data-value="60" data-i18n="interval60m">1 hour</div>
+            <div class="option" data-value="120" data-i18n="interval120m">2 hours</div>
+            <div class="option" data-value="180" data-i18n="interval180m">3 hours</div>
+            <div class="option" data-value="custom" data-i18n="intervalCustom">Custom…</div>
+          </div>
+        </div>
+
+        <select id="interval" style="display: none;">
+          <option value="10" data-i18n="interval10m">10 minutes</option>
+          <option value="30" data-i18n="interval30m">30 minutes</option>
+          <option value="60" data-i18n="interval60m">1 hour</option>
+          <option value="120" data-i18n="interval120m">2 hours</option>
+          <option value="180" data-i18n="interval180m">3 hours</option>
+          <option value="custom" data-i18n="intervalCustom">Custom…</option>
+        </select>
+      </section>
+
+      <section class="row" id="customIntervalRow" hidden>
+        <label for="customInterval" data-i18n="customIntervalLabel">Custom interval (minutes)</label>
+        <input type="number" id="customInterval" min="1" step="1" />
+      </section>
+
+      <div class="divider"></div>
+
+      <section class="row column">
+        <span class="group-label" data-i18n="showReminderAs">Show reminder as</span>
+        <label class="radio-label">
+          <input type="radio" name="displayMode" value="notification" />
+          <span class="radio-dot"></span>
+          <span data-i18n="modeNotification">Notification</span>
+        </label>
+        <label class="radio-label">
+          <input type="radio" name="displayMode" value="overlay" />
+          <span class="radio-dot"></span>
+          <span data-i18n="modeOverlay">Page overlay</span>
+        </label>
+        <label class="radio-label">
+          <input type="radio" name="displayMode" value="both" />
+          <span class="radio-dot"></span>
+          <span data-i18n="modeBoth">Both</span>
+        </label>
+      </section>
+
+      <div class="divider"></div>
+
+      <section class="row">
+        <label class="switch">
+          <input type="checkbox" id="muteSound" />
+          <span class="slider"></span>
+        </label>
+        <label for="muteSound" data-i18n="muteSound">Mute notification sound</label>
+      </section>
+
+      <div class="divider"></div>
+
+      <section class="row">
+        <button id="showNow" data-i18n="showNowButton">Show a zikr now</button>
+      </section>
+    </main>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

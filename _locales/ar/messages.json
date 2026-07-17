@@ -1,0 +1,53 @@
+{
+  "appName": {
+    "message": "Zakker - ذكّر"
+  },
+  "appDesc": {
+    "message": "تذكير دوري بالأذكار أثناء تصفحك للإنترنت."
+  },
+  "enableReminders": {
+    "message": "تفعيل التنبيهات"
+  },
+  "remindMeEvery": {
+    "message": "ذكّرني كل"
+  },
+  "interval10m": {
+    "message": "10 دقائق"
+  },
+  "interval30m": {
+    "message": "30 دقيقة"
+  },
+  "interval60m": {
+    "message": "ساعة واحدة"
+  },
+  "interval120m": {
+    "message": "ساعتين"
+  },
+  "interval180m": {
+    "message": "3 ساعات"
+  },
+  "intervalCustom": {
+    "message": "مخصص…"
+  },
+  "customIntervalLabel": {
+    "message": "المدة المخصصة (بالدقائق)"
+  },
+  "showReminderAs": {
+    "message": "طريقة التنبيه"
+  },
+  "modeNotification": {
+    "message": "إشعار"
+  },
+  "modeOverlay": {
+    "message": "إظهار على الصفحة"
+  },
+  "modeBoth": {
+    "message": "كلاهما (سيظهر الإشعار عند تشغيل chrome في الخلفية)"
+  },
+  "muteSound": {
+    "message": "كتم صوت التنبيه (في حال إختيار إشعار)"
+  },
+  "showNowButton": {
+    "message": "أظهر ذِكراً الآن"
+  }
+}

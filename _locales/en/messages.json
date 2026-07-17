@@ -1,0 +1,53 @@
+{
+  "appName": {
+    "message": "Zakker - ذكّر"
+  },
+  "appDesc": {
+    "message": "Periodic reminders to perform zikr (Islamic remembrance) while you browse."
+  },
+  "enableReminders": {
+    "message": "Enable reminders"
+  },
+  "remindMeEvery": {
+    "message": "Remind me every"
+  },
+  "interval10m": {
+    "message": "10 minutes"
+  },
+  "interval30m": {
+    "message": "30 minutes"
+  },
+  "interval60m": {
+    "message": "1 hour"
+  },
+  "interval120m": {
+    "message": "2 hours"
+  },
+  "interval180m": {
+    "message": "3 hours"
+  },
+  "intervalCustom": {
+    "message": "Custom…"
+  },
+  "customIntervalLabel": {
+    "message": "Custom interval (minutes)"
+  },
+  "showReminderAs": {
+    "message": "Show reminder as"
+  },
+  "modeNotification": {
+    "message": "Notification"
+  },
+  "modeOverlay": {
+    "message": "Page overlay"
+  },
+  "modeBoth": {
+    "message": "Both (Notification will appear when chrome is running in background)"
+  },
+  "muteSound": {
+    "message": "Mute notification sound (in case you choose notification)"
+  },
+  "showNowButton": {
+    "message": "Show a zikr now"
+  }
+}
